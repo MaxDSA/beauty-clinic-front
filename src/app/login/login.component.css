@@ -1,0 +1,90 @@
+.login-container {
+  width: 380px;
+  margin: 2rem 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  position: fixed;
+  right: 20%;
+}
+
+.login-form{
+  position: relative;
+  left: 20%;
+  margin-top: 20%;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-container label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+} 
+
+.imagem-fundo{
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  opacity: 10%;
+}
+
+.imagem-login{
+  height: 200px;
+}
+
+.form-outline i {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.form-control { 
+  border: 0px solid white !important;
+  border-radius: 20px !important;
+}
+
+.left-inner-addon {
+  position: relative;
+}
+.left-inner-addon i {
+  position: absolute;
+  padding: 8px 5px 5px 12px;
+  pointer-events: none;
+  color: #9c9b9b;
+  height: 50px;
+  width: 50px;
+}
+.left-inner-addon input.form-control {
+  padding-left: 60px;
+}
+
+button{
+  border-radius: 20px !important;
+  background-color: #DDBC93 !important;
+  
+}

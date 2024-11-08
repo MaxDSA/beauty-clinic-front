@@ -1,0 +1,52 @@
+/*.container-lg{
+    text-align: center !important;
+    background-image: url("../../assets/logo.png");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}*/
+
+/* .container-lg {
+    text-align: center !important;
+    background-image: url("../../assets/logo.png");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-color: #b8afa583
+} */
+.form-control { 
+    border: 0px solid white !important;
+    border-radius: 20px !important;
+} 
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon i {
+position: absolute;
+padding: 8px 5px 5px 12px;
+pointer-events: none;
+color: #9c9b9b;
+height: 50px;
+width: 50px;
+}
+.left-inner-addon input.form-control {
+    padding-left: 40px;
+}
+  
+.cards{
+    height: 80%;
+}
+
+button{
+    border-radius: 20px !important;
+    background-color: #DDBC93 !important;
+    border: 0px solid white;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5%;
+}
+
+.button{
+    max-width: 100%;
+}
