@@ -1,0 +1,28 @@
+  <div>
+    <img src="../../../assets/logo.png" class="imagem-fundo">
+  </div>
+
+  <div class="login-container">
+    <div>
+      <img src="../../../assets/logo_name.png" class="imagem-login">
+    </div>
+    <div class="login-form">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="col-12">
+          <span class="badge text-bg-secondary mb-3 p-3">{{textErr}}</span>
+        </div>
+        <div class="col-12">
+          <div class="form-group left-inner-addon">
+            <i class="bi bi-person-circle"></i>            
+            <input id="login" type="text" class="form-control" formControlName="login" placeholder="login"/>
+          </div>
+    
+          <div class="form-group left-inner-addon">
+            <i class="bi bi-lock"></i>       
+            <input id="senha" type="password" class="form-control" formControlName="senha" placeholder="senha"/>
+          </div>      
+          <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>

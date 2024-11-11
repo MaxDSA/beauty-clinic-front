@@ -1,0 +1,24 @@
+<div class="container button">
+  <div class="row">
+    <div class="col-2 offset-md-9 mt-3">
+      <div class="form-group left-inner-addon">
+        <i class="bi bi-search"></i>
+        <input id="search" type="text" class="form-control"  placeholder="pesquisar" [(ngModel)]="textoBusca" (ngModelChange)="chaveBusca($event)"/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container cards">
+    <div class="row justify-content-center p-5">
+      <div class="col-xl-3 col-md-4 mb-5" *ngFor="let cliente of clientesFiltrados">
+        <app-card-cliente [cliente]="cliente"></app-card-cliente>
+      </div>
+    </div>
+</div>
+<div class="container button">
+  <div class="row">
+    <div class="col-2 offset-md-10 mt-3">
+        <button (click)="novoCliente()">novo cliente</button>
+    </div>
+  </div>
+</div>

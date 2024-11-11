@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import { Cliente } from '../../../models/cliente.interface';
 
 @Component({
   selector: 'app-card-cliente',
@@ -9,6 +10,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [MatCardModule]
 })
 export class CardClienteComponent implements OnInit {
+
+  readonly cliente = input<Cliente>();
 
   constructor() { }
 

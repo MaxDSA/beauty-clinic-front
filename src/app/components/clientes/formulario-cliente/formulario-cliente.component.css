@@ -1,0 +1,11 @@
+.container-formulario{
+    border-radius: 20px;
+    background-color: #ddbc93b6;
+    border: 1px solid #ddbc93;
+    height: 40%;
+}
+
+.mat-mdc-form-field{
+    width: 100% !important;
+    margin-top: 5px;
+}

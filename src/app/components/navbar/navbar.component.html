@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <div class="col-11 align-self-start">
+        <a routerLink="/clientes" class="navbar-logo">
+            <img src="../../assets/logo.png" width="50px" height="50px"/>
+        </a>
+    </div>
+    
+    <div class="col align-self-end" *ngIf="!isLoggedIn()">
+        <button (click)="recuperar()">recuperar senha</button>
+    </div>
+    <div class="col align-self-end end" *ngIf="isLoggedIn()">
+        <button (click)="logout()">sair</button>
+    </div>
+</nav>

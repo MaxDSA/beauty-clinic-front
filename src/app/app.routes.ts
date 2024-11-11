@@ -1,9 +1,13 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { ClientesComponent } from './clientes/clientes.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
+import { authGuard } from './services/auth-guard.service';
+import { FormularioClienteComponent } from './components/clientes/formulario-cliente/formulario-cliente.component';
 
 export const routes: Routes = [
+    { path: 'login',
+        loadComponent: () => import('../app/components/login/login.component').then(mod => mod.LoginComponent),
+    },
     { path: '', redirectTo: '/login', pathMatch: 'full' },
-    { path: 'clientes', component: ClientesComponent },
-    { path: 'login', component: LoginComponent }
+    { path: 'clientes', component: ClientesComponent, canActivate: [authGuard]},
+    { path: 'cliente', component: FormularioClienteComponent, canActivate: [authGuard]},
 ];
